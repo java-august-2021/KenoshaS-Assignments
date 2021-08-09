@@ -1,4 +1,4 @@
-import Java.Util.Random;
+import Java.util.Random;
 import java.util.Arrays;
 import java.util.ArrayList;
 
@@ -42,7 +42,7 @@ public class PuzzleJava {
             newPassword[i] = randomString();
         }
         return newPassword;
-    
+    } 
 }
 
 
