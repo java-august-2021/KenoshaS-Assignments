@@ -1,4 +1,4 @@
-import Java.util.Random;
+import java.util.Random;
 import java.util.Arrays;
 import java.util.ArrayList;
 
@@ -22,12 +22,13 @@ public class PuzzleJava {
     }
 
     public static String generatePassword(){
+        ArrayList<Character> randomCharArr = new ArrayList<Character>();
         ArrayList<Character> alphabet = new ArrayList<Character>();
         for (char i = 'a'; i <= 'z'; i++){
-            letters.add(i);
+            alphabet.add(i);
         }
         for (int i = 0; i<8; i++) {
-            randomCharArr.add(letters.get(i));
+            randomCharArr.add(alphabet.get(i));
     }
         StringBuilder randomStr = new StringBuilder();
         for (char randomChar : randomCharArr) {
@@ -36,14 +37,16 @@ public class PuzzleJava {
         return randomStr.toString();
     }
 
-    public static String[] getNewPasswordSet() {
-        String[] newPassword = new String[8];
-        for (int i=0; i<8; i++) {
-            newPassword[i] = randomString();
-        }
-        return newPassword;
-    } 
+    // public static String[] getNewPasswordSet() {
+    //     String[] newPassword = new String[8];
+    //     for (int i=0; i<8; i++) {
+    //         newPassword[i] = newString();
+    //     }
+    //     return newPassword;
+    // } 
 }
+
+
 
 
 
