@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.languages.models.Languages;
-import com.langauges.repositories.LanguagesRepository;
+import com.languages.respositories.LanguagesRepository;
 
 @Service
 public class LanguagesService {

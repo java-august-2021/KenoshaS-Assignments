@@ -20,7 +20,7 @@
 			<thead>
 				<tr>
 					<th>Name</th>
-					<th>Creator</th>
+					<th>Date</th>
 					<th>Version</th>
 					<th>Action</th>
 				</tr>
@@ -32,7 +32,7 @@
 					<td>${ lang.creator }</td>
 					<td>${ lang.currentVersion }</td>
 					<td>
-						<a class="btn btn-primary" href="/${ lang.id }/edit">Edit</a>
+						<a class="btn btn-primary" href="/${ lang.id }/edit">Edit</a> <a class="btn btn-primary" href="/${ lang.id }/delete">Delete</a>
 						<form id="delete-form" action="/${lang.id}" method="post">
 						    <input type="hidden" name="_method" value="delete">
 						    <input class="btn btn-danger" type="submit" value="Delete">

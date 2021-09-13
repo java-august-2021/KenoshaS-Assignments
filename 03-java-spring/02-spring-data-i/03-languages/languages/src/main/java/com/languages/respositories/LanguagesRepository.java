@@ -1,4 +1,4 @@
-package com.langauges.repositories;
+package com.languages.respositories;
 
 import java.util.List;
 

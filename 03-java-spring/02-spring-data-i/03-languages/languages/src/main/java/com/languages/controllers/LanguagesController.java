@@ -60,6 +60,6 @@ public class LanguagesController {
 	@RequestMapping(value="/{id}", method=RequestMethod.DELETE)
 	public String Delete(@PathVariable("id") Long id) {
 		langService.deleteLanguage(id);
-		return "redirect:/";
+		return "redirect:/index.jsp";
 	}
 }
